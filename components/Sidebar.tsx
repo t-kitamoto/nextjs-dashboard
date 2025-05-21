@@ -21,7 +21,7 @@ import Link from 'next/link';
 
 const Sidebar = () => {
   return (
-    <Command className="bg-secondary rounded-none">
+    <Command className="bg-secondary rounded-none w-[250px] h-full">
       <CommandInput placeholder="Type a command or search..." />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
