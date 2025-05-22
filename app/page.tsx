@@ -5,7 +5,7 @@ import { Folder, MessageCircle, Newspaper, User } from 'lucide-react';
 export default function Home() {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-5">
         <DashboardCard
           title="Posts"
           count={100}

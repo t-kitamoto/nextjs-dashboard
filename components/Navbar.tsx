@@ -13,7 +13,7 @@ import {
 
 const Navbar = () => {
   return (
-    <div className="bg-primary dark:bg-slate-700 text-white py-2 px-5 flex justify-between">
+    <div className="min-w-full bg-primary dark:bg-slate-700 text-white py-2 px-5 flex justify-between">
       <Link href="/">
         <Image src={logo} alt="Logo" width={40}></Image>
       </Link>
