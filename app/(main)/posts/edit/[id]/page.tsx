@@ -1,11 +1,7 @@
-import posts from '@/data/posts';
 import PostEditForm from '@/components/posts/PostEditForm';
+import posts from '@/data/posts';
 
-interface PageProps {
-  params: { id: string };
-}
-
-export default function Page({ params }: PageProps) {
+export default function Page({ params }: { params: { id: string } }) {
   const post = posts.find((p) => p.id === params.id);
   if (!post) return <div>Post not found</div>;
 
