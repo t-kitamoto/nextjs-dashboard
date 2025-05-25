@@ -4,6 +4,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Sidebar from '@/components/Sidebar';
 import { Toaster } from '@/components/ui/sonner';
+import { ThemeProvider } from '@/components/providers/ThemeProvider';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -30,16 +31,23 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div>
-          <Navbar />
-          <div className="flex">
-            <div className="hidden md:block">
-              <Sidebar />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem={true}
+          storageKey="dashboard-theme"
+        >
+          <div>
+            <Navbar />
+            <div className="flex">
+              <div className="hidden md:block">
+                <Sidebar />
+              </div>
+              <div className="p-5 w-full">{children}</div>
             </div>
-            <div className="p-5 w-full">{children}</div>
           </div>
-        </div>
-        <Toaster />
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );
