@@ -45,21 +45,13 @@ const PostEditPage = ({ params }: PostEditPageProps) => {
   });
 
   useEffect(() => {
-    const loadPost = async () => {
-      const resolvedParams = await Promise.resolve(params);
-      const found = posts.find((p) => p.id === resolvedParams.id);
-      if (found) {
-        setPost(found);
-        form.reset({
-          title: found.title,
-          body: found.body,
-          author: found.author,
-          date: found.date,
-        });
-      }
+    const load = async () => {
+      const resolved = await Promise.resolve(params);
+      const found = posts.find((p) => p.id === resolved.id);
+      if (found) setPost(found);
     };
-    loadPost();
-  }, [params, form]);
+    load();
+  }, [params]);
 
   const handleSubmit = (data: z.infer<typeof formSchema>) => {
     toast('Post fas been updated successfully', {
