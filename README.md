@@ -28,7 +28,7 @@ https://nextjs-dashboard-ten-kohl-58.vercel.app/
 |------|------|
 | UI一部日本語化 | ボタンやフォームラベルなど一部を日本語に変更し、ローカライズ対応の実装練習として調整 |
 | toast対応 | `@/components/ui/toaster` が非推奨だったため、`sonner` に置き換え |
-| Hydration対策 | `useMounted` カスタムフックを導入し|
+| Hydration対策 | `useMounted` カスタムフックを導入
 
 ---
 
