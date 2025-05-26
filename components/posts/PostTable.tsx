@@ -30,15 +30,15 @@ const PostsTable = ({ limit, title }: PostsTableProps) => {
     <div className="mt-10">
       <h3 className="text-2xl mb-4 font-semibold">{title ? title : 'Posts'}</h3>
       <Table>
-        <TableCaption>A list of recent posts</TableCaption>
+        <TableCaption>最近の投稿リスト</TableCaption>
         <TableHeader>
           <TableRow>
-            <TableHead>Title</TableHead>
-            <TableHead className="hidden md:table-cell">Author</TableHead>
+            <TableHead>タイトル</TableHead>
+            <TableHead className="hidden md:table-cell">投稿者</TableHead>
             <TableHead className="hidden md:table-cell text-right">
-              Date
+              日付
             </TableHead>
-            <TableHead>View</TableHead>
+            <TableHead>ビュー</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -54,7 +54,7 @@ const PostsTable = ({ limit, title }: PostsTableProps) => {
               <TableCell>
                 <Link href={`/posts/edit/${post.id}`}>
                   <Button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-xs cursor-pointer">
-                    Edit
+                    編集
                   </Button>
                 </Link>
               </TableCell>

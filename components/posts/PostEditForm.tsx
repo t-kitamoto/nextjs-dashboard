@@ -55,8 +55,8 @@ export default function PostEditForm({ post }: { post: Post }) {
 
   return (
     <>
-      <BackButton text="Back to Post" link="/posts" />
-      <h3 className="text-2xl mb-4">Edit Post</h3>
+      <BackButton text="戻る" link="/posts" />
+      <h3 className="text-2xl mb-4">投稿の編集</h3>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-8">
           {/* title */}
@@ -65,7 +65,7 @@ export default function PostEditForm({ post }: { post: Post }) {
             name="title"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Title</FormLabel>
+                <FormLabel>タイトル</FormLabel>
                 <FormControl>
                   <Input {...field} />
                 </FormControl>
@@ -79,7 +79,7 @@ export default function PostEditForm({ post }: { post: Post }) {
             name="body"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Body</FormLabel>
+                <FormLabel>本文</FormLabel>
                 <FormControl>
                   <Textarea {...field} />
                 </FormControl>
@@ -93,7 +93,7 @@ export default function PostEditForm({ post }: { post: Post }) {
             name="author"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Author</FormLabel>
+                <FormLabel>投稿者</FormLabel>
                 <FormControl>
                   <Input {...field} />
                 </FormControl>
@@ -107,7 +107,7 @@ export default function PostEditForm({ post }: { post: Post }) {
             name="date"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Date</FormLabel>
+                <FormLabel>日付</FormLabel>
                 <FormControl>
                   <Input {...field} />
                 </FormControl>
@@ -115,7 +115,7 @@ export default function PostEditForm({ post }: { post: Post }) {
               </FormItem>
             )}
           />
-          <Button type="submit">Update Post</Button>
+          <Button type="submit">投稿を更新</Button>
         </form>
       </Form>
     </>

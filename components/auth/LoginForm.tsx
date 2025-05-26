@@ -47,9 +47,9 @@ const LoginForm = () => {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Login</CardTitle>
+        <CardTitle>ログイン</CardTitle>
         <CardDescription>
-          Log into your account with your credentials
+          資格情報を使用してアカウントにログインします。
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-2">
@@ -98,7 +98,7 @@ const LoginForm = () => {
                 </FormItem>
               )}
             />
-            <Button className="w-full cursor-pointer">Sign In</Button>
+            <Button className="w-full cursor-pointer">ログイン</Button>
           </form>
         </Form>
       </CardContent>

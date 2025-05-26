@@ -25,7 +25,7 @@ function ThemeToggler() {
         >
           <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
           <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-          <span className="sr-only">Toggle theme</span>
+          <span className="sr-only">テーマ切り替え</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
@@ -33,19 +33,19 @@ function ThemeToggler() {
           onClick={() => setTheme('light')}
           className="cursor-pointer"
         >
-          Light
+          ライト
         </DropdownMenuItem>
         <DropdownMenuItem
           onClick={() => setTheme('dark')}
           className="cursor-pointer"
         >
-          Dark
+          ダーク
         </DropdownMenuItem>
         <DropdownMenuItem
           onClick={() => setTheme('system')}
           className="cursor-pointer"
         >
-          System
+          システム
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

@@ -23,8 +23,8 @@ const AnalyticsChart = () => {
     <>
       <Card>
         <CardHeader>
-          <CardTitle>Analytics For This Year</CardTitle>
-          <CardDescription>Views Per Month</CardDescription>
+          <CardTitle>今年のアナリティクス</CardTitle>
+          <CardDescription>月間閲覧数</CardDescription>
         </CardHeader>
         <CardContent>
           <div style={{ width: '100%', height: 300 }}>

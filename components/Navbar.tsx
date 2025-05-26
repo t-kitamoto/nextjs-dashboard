@@ -29,13 +29,13 @@ const Navbar = () => {
             </Avatar>
           </DropdownMenuTrigger>
           <DropdownMenuContent>
-            <DropdownMenuLabel>My Account</DropdownMenuLabel>
+            <DropdownMenuLabel>アカウント</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem className="cursor-pointer">
-              <Link href="/profile">Profile</Link>
+              <Link href="/profile">プロフィール</Link>
             </DropdownMenuItem>
             <DropdownMenuItem className="cursor-pointer">
-              <Link href="/auth">Logout</Link>
+              <Link href="/auth">ログアウト</Link>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

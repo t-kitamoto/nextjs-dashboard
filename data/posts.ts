@@ -167,6 +167,25 @@ const posts: Post[] = [
       },
     ],
   },
+  {
+    id: '11',
+    title: 'このダッシュボードはデモです。',
+    body: 'ポートフォリオ用にUIを日本語化しています。',
+    author: 'master',
+    date: '2024-05-26',
+    comments: [
+      {
+        id: '1',
+        text: 'React/Next.js、Shadcn/ui、TypeScript、Tailwind CSS、Recharts、Lucide React、React Hook Form、Zod を使用しています。',
+        username: 'Emma',
+      },
+      {
+        id: '2',
+        text: 'フロントエンド学習用のためデータベースとは連携していません。',
+        username: 'Daniel',
+      },
+    ],
+  },
 ];
 
 export default posts;

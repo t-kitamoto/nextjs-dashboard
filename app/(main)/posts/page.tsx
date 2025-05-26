@@ -5,7 +5,7 @@ import PostPagination from '@/components/posts/PostPagination';
 const PostsPage = () => {
   return (
     <>
-      <BackButton text="Go Back" link="/" />
+      <BackButton text="戻る" link="/" />
       <PostsTable />
       <PostPagination />
     </>

@@ -52,8 +52,10 @@ const RegisterForm = () => {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Register</CardTitle>
-        <CardDescription>Sign up by adding the info below</CardDescription>
+        <CardTitle>サインアップ</CardTitle>
+        <CardDescription>
+          以下の情報を追加してサインアップしてください。
+        </CardDescription>
       </CardHeader>
       <CardContent className="space-y-2">
         <Form {...form}>
@@ -142,7 +144,7 @@ const RegisterForm = () => {
                 </FormItem>
               )}
             />
-            <Button className="w-full cursor-pointer">Sign Up</Button>
+            <Button className="w-full cursor-pointer">サインアップ</Button>
           </form>
         </Form>
       </CardContent>

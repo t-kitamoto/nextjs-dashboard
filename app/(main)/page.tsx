@@ -29,7 +29,7 @@ export default function Home() {
         />
       </div>
       <AnalyticsChart />
-      <PostsTable title="Latest Posts" limit={5} />
+      <PostsTable title="最近の投稿" limit={5} />
     </>
   );
 }

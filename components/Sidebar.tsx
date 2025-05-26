@@ -24,36 +24,36 @@ const Sidebar = () => {
     <Command className="bg-secondary rounded-none w-[250px] h-full">
       <CommandInput placeholder="Type a command or search..." />
       <CommandList>
-        <CommandEmpty>No results found.</CommandEmpty>
+        <CommandEmpty>結果が見つかりませんでした。</CommandEmpty>
         <CommandGroup heading="Suggestions">
           <CommandItem>
             <LayoutDashboard className="mr-2 h-4 w-4" />
-            <Link href="/">Dashboard</Link>
+            <Link href="/">ダッシュボード</Link>
           </CommandItem>
           <CommandItem>
             <Newspaper className="mr-2 h-4 w-4" />
-            <Link href="/posts">Posts</Link>
+            <Link href="/posts">投稿</Link>
           </CommandItem>
           <CommandItem>
             <Folders className="mr-2 h-4 w-4" />
-            <Link href="#">Categories</Link>
+            <Link href="#">カテゴリ</Link>
           </CommandItem>
         </CommandGroup>
         <CommandSeparator />
         <CommandGroup heading="Settings">
           <CommandItem>
             <User className="mr-2 h-4 w-4" />
-            <span>Profile</span>
+            <span>プロフィール</span>
             <CommandShortcut>Ctrl + P</CommandShortcut>
           </CommandItem>
           <CommandItem>
             <CreditCard className="mr-2 h-4 w-4" />
-            <span>Billing</span>
+            <span>請求情報</span>
             <CommandShortcut>Ctrl + B</CommandShortcut>
           </CommandItem>
           <CommandItem>
             <Settings className="mr-2 h-4 w-4" />
-            <span>Settings</span>
+            <span>設定</span>
             <CommandShortcut>Ctrl + S</CommandShortcut>
           </CommandItem>
         </CommandGroup>
