@@ -19,7 +19,8 @@ https://nextjs-dashboard-ten-kohl-58.vercel.app/
 - Recharts
 - Lucide React
 - React Hook Form & Zod
-
+---
+![ダッシュボード](./sample.png)
 ---
 
 ## カスタマイズ内容
