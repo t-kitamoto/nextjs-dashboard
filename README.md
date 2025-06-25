@@ -20,7 +20,7 @@ https://nextjs-dashboard-ten-kohl-58.vercel.app/
 - Lucide React
 - React Hook Form & Zod
 ---
-![ダッシュボード](./sample.png)
+![ダッシュボード](https://github.com/t-kitamoto/nextjs-dashboard/blob/main/public/sample.png)
 ---
 
 ## カスタマイズ内容
